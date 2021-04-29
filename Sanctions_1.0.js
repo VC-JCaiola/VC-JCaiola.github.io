@@ -2,7 +2,7 @@ const populateNames = (last, first) => {
 
   const queryLib = [];
 
-  const query = `%22${last}%22`;
+  const query = `${last}`;
   // const queryReverse = `%22${last}+${first}%22`;
   const queryBIS = `${last}`;
 
