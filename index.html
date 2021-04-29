@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <title></title>
   </head>
+  <script type="text/javascript">
+    const navigateNY = () => {
+      window.location.href='./ny.html'
+    };
+  </script>
   <body>
     Name: <input type="text" name="lname" id="last" value="">
       <script>
@@ -20,8 +25,12 @@
       <!-- First name: <input type="text" name="fname" id="first" value=""><br><br> -->
     <input type="button" value="Submit" id="submit" onclick="performSearch();"></input>
     <br>
-    <div class="footnote">
+    <div>
       Websites included in search: BIS, CFPB, DOJ, DOJ Archive, FTC, SEC, SEC Edgar, US Supreme Court
     </div>
+    <br>
+    <br>
+    <input type="button" value="New York Search" name="ny" onclick="navigateNY();"></input>
+
   </body>
 </html>
