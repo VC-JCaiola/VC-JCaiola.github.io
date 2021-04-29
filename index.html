@@ -6,14 +6,19 @@
     <title></title>
   </head>
   <body>
-    <form id="frm1" onsubmit="performSearch();" method="post">
-      <br>
-      Name: <input type="text" name="lname" id="last" value=""><br>
-      <!-- <br> -->
-      <br>
+    Name: <input type="text" name="lname" id="last" value="">
+      <script>
+        document.getElementById("last").addEventListener("keypress", function(e) {
+          if (e.key === 'Enter') {
+            performSearch();
+          }
+        });
+      </script>
+    </input>
+          <!-- <br> -->
+    <br>
       <!-- First name: <input type="text" name="fname" id="first" value=""><br><br> -->
-      <input type="button" value="Submit" id="submit" onclick="performSearch();"></input>
-    </form>
+    <input type="button" value="Submit" id="submit" onclick="performSearch();"></input>
     <br>
     <br>
     <div class="footnote">
