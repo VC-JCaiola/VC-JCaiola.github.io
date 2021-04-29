@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script defer="" src="nySearch_1.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    Last Name: <input type="text" name="lname" id="last" value="">
+    First Name: <input type="text" name="fname" id="first" value="">
+      <script>
+        document.getElementById("last").addEventListener("keypress", function(e) {
+          if (e.key === 'Enter') {
+            performSearch();
+          }
+        });
+      </script>
+    </input>
+    <br>
+    <br>
+    <input type="button" value="Submit" id="submit" onclick="performSearch();"></input>
+    <br>
+    <br>
+    <div class="footnote">
+      Searches include: NYSCEF Ptf/Dft, Clerk Minutes Ptf, Clerk Minutes Dft, CCOP Ptf, and CCOP Dft.
+    </div>
+  </body>
+</html>
